@@ -4,6 +4,6 @@ setup:
       as: DATABASE
 build:
   docker:
-    ui: ./wool-ui/Dockerfile
+    ui: ./Dockerfile
 run:
   ui: yarn start
