@@ -1,0 +1,9 @@
+setup:
+  addons:
+    - plan: heroku-postgresql
+      as: DATABASE
+build:
+  docker:
+    ui: ./wool-ui/Dockerfile
+run:
+  ui: yarn start
