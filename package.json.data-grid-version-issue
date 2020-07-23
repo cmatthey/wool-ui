@@ -1,5 +1,5 @@
 {
-  "name": "todelete",
+  "name": "woolui",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,14 +7,12 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "babel-loader": "^8.1.0",
+    "babel-loader": "8.1.0",
     "bootstrap": "^4.5.0",
-    "moment": "^2.27.0",
     "react": "^16.13.1",
     "react-data-grid": "^7.0.0-canary.16",
-    "react-day-picker": "^7.4.8",
     "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.1"
+    "react-scripts": "3.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
