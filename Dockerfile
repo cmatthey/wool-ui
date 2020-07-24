@@ -1,6 +1,14 @@
-FROM node:12.18.2
-RUN mkdir -p /app/api
-WORKDIR /app/ui
-ADD . /app/ui/
-RUN yarn install
-ENV UI_PORT 3000
+FROM alpine:latest
+
+RUN apk add --no-cache --update yarn
+RUN apk add --no-cache --update python-apt
+
+#RUN yarn install
+ADD . /opt/ui/
+WORKDIR /opt/ui
+
+RUN adduser -D myuser
+USER myuser
+
+ENV PORT 3000
+CMD yarn start
